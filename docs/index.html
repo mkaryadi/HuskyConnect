@@ -210,6 +210,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
 
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+            <script>
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                apiKey: "AIzaSyAi_HSyOVRD0F5J_kFjhu8PdCgap0GMZkg",
+                authDomain: "huskyconnect-90858.firebaseapp.com",
+                databaseURL: "https://huskyconnect-90858.firebaseio.com",
+                projectId: "huskyconnect-90858",
+                storageBucket: "huskyconnect-90858.appspot.com",
+                messagingSenderId: "204458303656",
+                appId: "1:204458303656:web:6aad3c7f890cc0cac2629d",
+                measurementId: "G-H36B5LGHBD"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              firebase.analytics();
+            </script>
 	</body>
 </html>
