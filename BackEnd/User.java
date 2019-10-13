@@ -2,15 +2,19 @@ import java.util.*;
 
 public class User {
 
+    private String name;
+    private String email;
     private Set<String> taken;
     private Set<String> taking;
     
     public User() {
+        Scanner console = new Scanner(System.in);
+        System.out.
         taken = new TreeSet<>();
         taking = new TreeSet<>();
         System.out.println("Enter classes you've taken?");
         fill(taken, pastPrompt);
-        String currentPrompt = "Enter classes you're taking?");
+        String currentPrompt = "Enter classes you're taking?"
         fill(taking, currentPrompt);
     }
     
@@ -25,7 +29,7 @@ public class User {
             data.add(course);
             System.out.println("Is that all? If so, please type the number 1. Otherwise, type any other number.");
             int checkNum = console.nextInt();
-            if (checkNum == 1) {
+            if (checkNum == 1) { 
                 done = true;
             }
         }
