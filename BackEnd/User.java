@@ -1,47 +1,36 @@
 import java.util.*;
 
 public class User {
-    private Scanner console;
+
     private Set<String> taken;
     private Set<String> taking;
     
-    private String name;
-    private String contactInfo;
-    
-    public User(String name, String contactInfo) {
-        console = new Scanner(System.in);
-        taken = new TreeSet<String>();
-        taking = new TreeSet<String>();
-        
-        this.name = name;
-        this.contactInfo = contactInfo;
-        
-        System.out.println("Hello, " + name);      
-        System.out.println("Enter classes you've taken");
-        fill(taken);
-        System.out.println("Enter a class you're taking:");
-        fill(taking);
+    public User() {
+        taken = new TreeSet<>();
+        taking = new TreeSet<>();
+        System.out.println("Enter classes you've taken?");
+        fill(taken, pastPrompt);
+        String currentPrompt = "Enter classes you're taking?");
+        fill(taking, currentPrompt);
     }
     
-    private void fill(Set<String> data) {
+    
+     
+    private void fill(Set<String> data, String prompt) {
+        Scanner console = new Scanner(System.in);
         boolean done = false;
-        String course = console.nextLine();
-        
-        if (course.equals("q") || course.equals("Q")) {
-            done = true;
-        } else {
-            data.add(course);
-        }
         while (!done) {
-            System.out.println("Enter another course (Q to Quit)");
-            course = console.nextLine();
-            if (course.equals("q") || course.equals("Q")) {
+            System.out.println(prompt);
+            String course = console.nextLine();
+            data.add(course);
+            System.out.println("Is that all? If so, please type the number 1. Otherwise, type any other number.");
+            int checkNum = console.nextInt();
+            if (checkNum == 1) {
                 done = true;
-            } else {
-               data.add(course);
             }
         }
     }
+<<<<<<< HEAD
     
     // Prints out what courses are taken
     public void printTakenList() {
@@ -62,4 +51,6 @@ public class User {
     public boolean hasTaken(String course) {
          return taken.contains(course);
     }
+=======
+>>>>>>> master
 }
