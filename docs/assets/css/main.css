@@ -83,8 +83,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-color: #800080;
+		background-image: url("images/uw.jpg"), url("../../images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -95,7 +95,7 @@ input, select, textarea {
 		font-weight: 300;
 		letter-spacing: 1px;
 		color: #3a3939;
-		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+		text-shadow: 0 0 0px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
 	}
 
