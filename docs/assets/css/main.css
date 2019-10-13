@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		background-color: #800800;
-		background-image: url("images/libuw.jpg");
+		background-image: url("images/fixedw_large_4x.jpg"), url("../../images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
