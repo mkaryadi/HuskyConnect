@@ -2,10 +2,12 @@ import java.util.*;
 
 public class User {
 
+    private Scanner console;
     private Set<String> taken;
     private Set<String> taking;
     
     public User() {
+        console = new Scanner(System.in);
         taken = new TreeSet<>();
         taking = new TreeSet<>();
         System.out.println("Enter classes you've taken?");
@@ -13,11 +15,8 @@ public class User {
         String currentPrompt = "Enter classes you're taking?");
         fill(taking, currentPrompt);
     }
-    
-    
      
     private void fill(Set<String> data, String prompt) {
-        Scanner console = new Scanner(System.in);
         boolean done = false;
         while (!done) {
             System.out.println(prompt);
