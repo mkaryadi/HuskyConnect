@@ -30,4 +30,27 @@ public class User {
             }
         }
     }
+<<<<<<< HEAD
+    
+    // Prints out what courses are taken
+    public void printTakenList() {
+         System.out.println(taken);
+    }
+    
+    // Prints out what courses are being taken
+    public void printTakingList() {
+         System.out.println(taking);
+    }
+    
+    // Finds to see if personTwo has TAKEN classes personOne is TAKING
+    public Set<String> compare(Set<String> personOne, Set<String> personTwo) {
+         Set<String> similarCourses = new TreeSet<String>();
+         return similarCourses;
+    }
+    
+    public boolean hasTaken(String course) {
+         return taken.contains(course);
+    }
+=======
+>>>>>>> master
 }
