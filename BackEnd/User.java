@@ -2,14 +2,16 @@ import java.util.*;
 
 public class User {
     private Scanner console;
-    private Set<String> courses;
+    private Set<String> taken;
+    private Set<String> taking;
     
     private String name;
     private String contactInfo;
     
     public User(String name, String contactInfo) {
         console = new Scanner(System.in);
-        courses = new TreeSet<String>();
+        taken = new TreeSet<String>();
+        taking = new TreeSet<String>();
         
         this.name = name;
         this.contactInfo = contactInfo;
@@ -42,13 +44,18 @@ public class User {
     }
     
     // Prints out what courses are taken
-    public void printCourses() {
-         System.out.println(courses);
+    public void printTakenList() {
+         System.out.println(taken);
+    }
+    
+    // Prints out what courses are being taken
+    public void printTakingList() {
+         System.out.println(taking);
     }
     
     // Finds to see if personTwo has TAKEN classes personOne is TAKING
     public Set<String> compare(Set<String> personOne, Set<String> personTwo) {
-         Set<String> similarCourses = new Set<String>();
+         Set<String> similarCourses = new TreeSet<String>();
          return similarCourses;
     }
 }
