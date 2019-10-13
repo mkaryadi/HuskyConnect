@@ -71,21 +71,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
-            <script>
-                    const db = firebase.firestore();
-
-                    function writeData() {
-                        db.collection('users').doc('firstUser').set({
-                            name:'Jimmy Smith'
-                        })
-                        .then(function(){
-                            console.log('data written');
-                        })
-                        .catch(function(error){
-                            console.error('Error adding document', error);
-                        });
-                    }
-            </script>
+    
         
         
         <!-- Contact -->
@@ -106,6 +92,21 @@
 								<div class="col-12">
 									<ul class="actions">
 										<li><button onclick="writeData()">write</button></li>
+                                        <script>
+                    const db = firebase.firestore();
+
+                    function writeData() {
+                        db.collection('users').doc('firstUser').set({
+                            name:'Jimmy Smith'
+                        })
+                        .then(function(){
+                            console.log('data written');
+                        })
+                        .catch(function(error){
+                            console.error('Error adding document', error);
+                        });
+                    }
+            </script>
 									</ul>
 								</div>
 							</div>
