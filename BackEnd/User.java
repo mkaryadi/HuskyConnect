@@ -2,14 +2,16 @@ import java.util.*;
 
 public class User {
     private Scanner console;
-    private Set<String> courses;
+    private Set<String> taken;
+    private Set<String> taking;
     
     private String name;
     private String contactInfo;
     
     public User(String name, String contactInfo) {
         console = new Scanner(System.in);
-        courses = new TreeSet<String>();
+        taken = new TreeSet<String>();
+        taking = new TreeSet<String>();
         
         this.name = name;
         this.contactInfo = contactInfo;
