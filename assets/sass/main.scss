@@ -106,8 +106,8 @@
 		}
 
 	body {
-		background-color: #183026;
-		background-image: url('images/overlay.png'), url('../../images/bg.jpg');
+		background-color: #800080;
+		background-image: url('uw.jpg');
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -118,7 +118,7 @@
 		font-weight: 300;
 		letter-spacing: 1px;
 		color: #3a3939;
-		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+		text-shadow: 0 0 0px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
 
 		&.is-scroll {
@@ -179,7 +179,7 @@
 	a {
 		@include vendor('transition', ('border-color 0.35s ease-in-out', 'color 0.35s ease-in-out'));
 		color: #35b88f;
-		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
+		text-shadow: 0 0 0px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
 		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 
