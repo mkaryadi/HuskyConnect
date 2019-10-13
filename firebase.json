@@ -1,9 +1,0 @@
-{
-  "hosting": {
-  "site": "huskyconnect",
-  "public": "public"
-  },
-  "database": {
-    "rules": "database.rules.json"
-  }
-}
