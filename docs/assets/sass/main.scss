@@ -427,10 +427,12 @@
 			margin: 0 0 0.5em 0;
 		}
 
+
 		input[type="text", name="Name"],
 		input[type="email", name="UW Email Address"],
 		input[type="text", name="Courses Previously Taken"],
 		input[type="text", name="Courses Taking Currently"]
+
 		select,
 		textarea {
 			@include vendor('transition', 'background-color 0.35s ease-in-out');
@@ -446,9 +448,11 @@
 			}
 		}
 
+
 		input[type="text", name="Name"],
 		input[type="email", name="UW Email Address"],
 		input[type="text", name="Courses Taken"],
+
 		select {
 			line-height: 1em;
 		}
