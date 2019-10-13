@@ -122,7 +122,7 @@ input, select, textarea {
 		font-weight: 300;
 		letter-spacing: 1px;
 		color: #3a3939;
-		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+		text-shadow: 0 0 0px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
 	}
 
@@ -161,7 +161,7 @@ input, select, textarea {
 		-ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		color: #35b88f;
-		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
+		text-shadow: 0 0 0px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
 		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 	}
@@ -1617,7 +1617,8 @@ input, select, textarea {
 
 	form input[type="text"],
 	form input[type="email"],
-	form input[type="password"],
+	form input[type="text", name="Courses Taken"],
+	form input[type="text", name="Courses Currently Taking"],
 	form select,
 	form textarea {
 		-moz-transition: background-color 0.35s ease-in-out;
@@ -1632,17 +1633,19 @@ input, select, textarea {
 		padding: 0.75em;
 	}
 
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
+	form input[type="text"]:focus
+	form input[type="email"]:focus
+	form input[type="text", name="Courses Taken"]:focus
+	form input[type="text", name="Courses Currently Taking"]:focus
 		form select:focus,
 		form textarea:focus {
 			background-color: #f8f8f8;
 		}
 
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
+		form input[type="text"],
+		form input[type="email"],
+		form input[type="text", name="Courses Taken"],
+		form input[type="text", name="Courses Currently Taking"],
 	form select {
 		line-height: 1em;
 	}
