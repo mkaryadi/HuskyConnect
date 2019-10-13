@@ -2,7 +2,7 @@ const db = firebase.firestore();
 
 function writeData() {
     db.collection('users').doc('firstUser').set({
-        name:'John Smith'
+        name:'Jimmy Smith'
     })
     .then(function(){
         console.log('data written');
