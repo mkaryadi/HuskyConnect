@@ -30,7 +30,6 @@ public class User {
             }
         }
     }
-<<<<<<< HEAD
     
     // Prints out what courses are taken
     public void printTakenList() {
@@ -51,6 +50,4 @@ public class User {
     public boolean hasTaken(String course) {
          return taken.contains(course);
     }
-=======
->>>>>>> master
 }
